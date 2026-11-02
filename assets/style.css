@@ -4747,3 +4747,29 @@ html.is-resizing nav.main-nav * {
   nav.main-nav .nav-brand .brand-text .bn { font-size: 1rem; }
   nav.main-nav .nav-brand .brand-text .en { font-size: .58rem; letter-spacing: 1px; }
 }
+
+
+/* ===========================================================
+   "ভর্তি রেজিস্ট্রেশন" বাটন: সব পেজে একই চেহারা
+   (আগে শুধু btn-navy ক্লাস থাকলেই বাটন দেখাত; অন্য পেজে স্বচ্ছ হয়ে লেখার মতো দেখাত)
+=========================================================== */
+nav.main-nav a.nav-cta,
+nav.main-nav a.nav-cta:hover,
+nav.main-nav a.nav-cta.active {
+  background: linear-gradient(90deg, var(--gold-light) 0%, #e04576 50%, var(--gold-light) 100%);
+  color: var(--navy-dark) !important;
+  font-weight: 700;
+  border-bottom: 0;
+  box-shadow: 0 4px 15px rgba(240, 126, 50, .3);
+}
+nav.main-nav a.nav-cta:hover { filter: brightness(1.06); }
+
+@media (max-width: 940px) {
+  nav.main-nav a.nav-cta {
+    display: block;
+    margin-top: 12px;
+    padding: 14px 18px !important;
+    border-radius: 10px;
+    text-align: center;
+  }
+}
