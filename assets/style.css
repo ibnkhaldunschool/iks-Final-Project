@@ -442,7 +442,7 @@ nav.main-nav .nav-brand { display: none; }
   background-color: rgb(6, 6, 6);
   color: var(--paper);
   overflow: hidden;
-  padding: 90px 0 90px;
+  padding: 100px 0 100px;
 }
 
 .hero::before {
@@ -467,7 +467,7 @@ nav.main-nav .nav-brand { display: none; }
   width: 33.33%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.19;
+  opacity: 0.25;
 }
 
 
@@ -488,7 +488,7 @@ nav.main-nav .nav-brand { display: none; }
   font-family: var(--font-hero);
 }
 .hero h1 {
-  font-size: 40px;
+  font-size: 50px;
   color: var(--white);
   letter-spacing: .001em;
   opacity: 1;
@@ -591,7 +591,7 @@ nav.main-nav .nav-brand { display: none; }
 }
 @media (max-width: 640px) {
   .hero {
-    padding: 40px 0;
+    padding: 50px 0;
     
   } .eyebrow{
   font-size: 0.7rem;
@@ -602,7 +602,7 @@ nav.main-nav .nav-brand { display: none; }
     margin-top: 30px;
   }
    .hero h1{
-  font-size: 23px;
+  font-size: 30px;
   color: var(--white);
   letter-spacing: .001em;
   opacity: 1;
@@ -2961,7 +2961,7 @@ li.has-dropdown:hover>a .caret {
 .lb-scroll-track {
   display: flex;
   flex-direction: column;
-  animation: lbTickerScroll 24s linear infinite;
+  animation: lbTickerScroll 45s linear infinite;
 }
 
 .lb-scroll:hover .lb-scroll-track {
