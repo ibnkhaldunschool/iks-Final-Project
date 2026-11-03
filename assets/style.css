@@ -469,8 +469,6 @@ nav.main-nav .nav-brand { display: none; }
   object-fit: cover;
   opacity: 0.25;
 }
-
-
 .hero-inner {
   display: grid;
   grid-template-columns: 1fr;
@@ -602,7 +600,7 @@ nav.main-nav .nav-brand { display: none; }
     margin-top: 30px;
   }
    .hero h1{
-  font-size: 30px;
+  font-size: 24px;
   color: var(--white);
   letter-spacing: .001em;
   opacity: 1;
