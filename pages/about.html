@@ -32,7 +32,7 @@
 
   // অন্য পেজ থেকে #সেকশন লিংকে এলে: ছবি লোড হয়ে লেআউট স্থির না হওয়া পর্যন্ত পেজ দেখানো হবে না,
   // তারপর সরাসরি সঠিক সেকশনে খুলবে (মাঝখানে টপ দেখা যাবে না)
-  if (location.hash.length > 1) root.style.opacity = '0';
+   if (location.hash.length > 1) root.style.opacity = '0';
   function reveal() { root.style.transition = 'opacity .18s'; root.style.opacity = ''; }
   var revealTimer = setTimeout(reveal, 3000); // কিছু আটকে গেলেও পেজ যেন লুকিয়ে না থাকে  window.addEventListener('load', function () {
     var t = hashTarget();
@@ -40,7 +40,6 @@
     requestAnimationFrame(function () {
       requestAnimationFrame(function () { clearTimeout(revealTimer); reveal(); });
     });
-  });
 
   if (!reduce) {
     const lenis = new Lenis({ duration: 1.1, smoothWheel: true });
@@ -65,8 +64,10 @@
   <div class="topbar">
     <div class="marquee">
       <div class="marquee-track">
-        <span>২০২৭ শিক্ষাবর্ষের ভর্তি চলছে — ৬ষ্ঠ থেকে নবম শ্রেণি পর্যন্ত সীমিত আসনে। আবেদনের শেষ তারিখ ৩০ নভেম্বর,
-          ২০২৬।</span>
+        <span>
+          ২০২৭ শিক্ষাবর্ষের ভর্তি চলছে — ৬ষ্ঠ থেকে নবম শ্রেণি পর্যন্ত সীমিত আসনে। আবেদনের শেষ তারিখ ৩০ নভেম্বর,
+          ২০২৬।
+        </span>
       </div>
     </div>
   </div>
@@ -595,7 +596,7 @@
             </div>
           </div>
 
-          <a href="staff.html" class="iks-btn-all">
+          <a href="staff.html" class="iks-btn-all btnFull">
             <span style="margin-right: 8px;">👥</span> সকল শিক্ষক তালিকা দেখুন <span>→</span>
           </a>
         </div>
